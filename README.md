@@ -1,17 +1,37 @@
 # jharkhand_explorer
 
-A new Flutter project.
 
-## Getting Started
+Jharkhand Explorer is an AI-powered tourism platform designed to help travelers discover the rich cultural heritage, traditions, history, and natural beauty of Jharkhand. The application combines intelligent trip planning with immersive cultural experiences, making travel more engaging and informative.
 
-This project is a starting point for a Flutter application.
+## Core Features
 
-A few resources to get you started if this is your first Flutter project:
+### 1. Mythology Discovery
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Explore the myths, legends, folklore, and historical stories associated with Jharkhand's famous landmarks, temples, monuments, waterfalls, and cultural sites. Gain deeper insights into the traditions and beliefs that have shaped the region over generations.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 2. Traditional Cuisine
+
+Discover the authentic flavors of Jharkhand through its traditional dishes. Learn about local ingredients, cultural significance, preparation methods, and recipes that define the state's culinary heritage.
+
+### 3. Traditional Attire
+
+Explore Jharkhand's traditional clothing and tribal attire, along with their historical and cultural significance. Users can learn about different styles, occasions, and communities associated with these garments.
+
+### 4. Language Assistance
+
+Break language barriers with real-time translation support. Communicate more effectively with locals by translating text and phrases between multiple languages.
+
+## AI-Powered Features
+
+### AI Travel Planner
+
+Create personalized travel itineraries based on user preferences, trip duration, interests, and travel goals. The AI planner recommends destinations, activities, accommodations, and optimal travel routes.
+
+### Budget Estimation
+
+Plan trips with confidence using intelligent budget forecasting. Users receive estimated costs for transportation, accommodation, food, and activities, helping them manage expenses effectively.
+
+## Vision
+
+Jharkhand Explorer aims to promote tourism by blending modern AI technology with the state's rich cultural heritage, enabling travelers to experience Jharkhand in a more meaningful, accessible, and personalized way.
+
