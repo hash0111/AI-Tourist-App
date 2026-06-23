@@ -34,6 +34,42 @@ class SupabaseService {
       'ai_planner',
       body: {'query': query, 'budget': budget},
     );
-    return response.data as Map<String, dynamic>;
+    final data = response.data as Map<String, dynamic>;
+    if (data['success'] == true) {
+      return data['plan'] as Map<String, dynamic>;
+    }
+    throw Exception(data['error'] ?? 'AI planner failed');
+  }
+
+  Future<Map<String, dynamic>> enrichContent({
+    required String type,
+    required String name,
+    required String baseDescription,
+  }) async {
+    final response = await _client.functions.invoke(
+      'enrich_content',
+      body: {'type': type, 'name': name, 'baseDescription': baseDescription},
+    );
+    final data = response.data as Map<String, dynamic>;
+    if (data['success'] == true) {
+      return data['story'] as Map<String, dynamic>;
+    }
+    throw Exception(data['error'] ?? 'Content enrichment failed');
+  }
+
+  Future<Map<String, dynamic>> translate({
+    required String text,
+    required String sourceLanguage,
+    required String targetLanguage,
+  }) async {
+    final response = await _client.functions.invoke(
+      'translate',
+      body: {'text': text, 'sourceLanguage': sourceLanguage, 'targetLanguage': targetLanguage},
+    );
+    final data = response.data as Map<String, dynamic>;
+    if (data['success'] == true) {
+      return data;
+    }
+    throw Exception(data['error'] ?? 'Translation failed');
   }
 }
